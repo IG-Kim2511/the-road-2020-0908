@@ -1,3 +1,39 @@
+/* [global] */
+
+:root {
+  /* color */
+  --primary-color: #2b81e4;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --grey-color: #555;
+  --light-grey-color: #777;
+  --test-color: yellow;
+
+  /* font size */
+
+  --font-large: 1.6rem;
+  --font-medium: 1.4rem;
+  --font-regular: 1.2rem;
+  --font-basic: 1rem;
+  --font-micro: 0.8rem;
+
+  /* font weight */
+
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-basic: 400;
+
+  /* letterspacing */
+  --letterspacing-basic: 0.1rem;
+
+  /* size */
+  --size-border-radius: 0.5rem;
+
+  /* animation */
+  --animation-duration: 0.3s;
+}
+
+/* common styles */
 * {
   font-family: "Open Sans", sans-serif;
 
@@ -11,9 +47,23 @@
   outline: none;
 }
 
+html {
+  font-size: 62.5%;
+}
 
-.center{
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.container {
+  margin: 3.5rem;
+  box-shadow: 2rem 4rem 2rem var(--light-grey-color);
+  overflow: hidden;
+
+  background-color: var(--secondary-color);
+}
+
+/* [navbar] */
+/* background-color: yellowgreen; */
