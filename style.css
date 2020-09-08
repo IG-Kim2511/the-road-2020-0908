@@ -10,3 +10,10 @@
   box-sizing: border-box;
   outline: none;
 }
+
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
