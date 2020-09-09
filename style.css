@@ -288,27 +288,61 @@ html {
 }
 
 /* css 3 */
-@keyframes image-float{
+@keyframes image-float {
+  0% {
+    transform: translateZ(40rem);
+    opacity: 1;
+  }
+  30% {
+    transform: translateZ(-500rem) translateX(150rem);
+    opacity: 0.2;
+  }
+  60% {
+    transform: translateZ(-1500rem) translateX(800rem);
+    opacity: 0.6;
+  }
+  80% {
+    transform: translateZ(-200rem) translateX(140rem);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateZ(40rem);
+    opacity: 1;
+  }
+}
 
-0%{
-  transform: translateZ(40rem);
-  opacity:1;
-}
-30%{
-  transform: translateZ(-500rem) translateX(150rem);
-  opacity:0.2;
-}
-60%{
-  transform: translateZ(-1500rem) translateX(800rem);
-  opacity:0.6;
-}
-80%{
-  transform: translateZ(40rem);
-  opacity:0.8;
-}
-100%{
-  transform: translateZ(40rem);
-  opacity:1;
+/* [Popular tours] */
+.popular-tours{
+  padding: 5rem 0 10rem 0;
 }
 
+/* css 4 */
+.card{
+  width:35rem;
+  position: relative;
+
+  /* css 8 . js 2 */
+  perspective: 150rem;
 }
+
+/* css 4 */
+.card-image{
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.front-side{
+  text-align: center;
+  background-color: var(--white-color);
+  border-radius: 1rem;
+
+  position: relative;
+  z-index: 10;
+
+  opacity: 0.9;
+
+  /* js 2 */
+  transition: opacity 1s, transform 1s, box-shadow 1s;
+  
+}
+/* background-color: var(--test-color); */
