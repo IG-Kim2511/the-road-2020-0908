@@ -98,7 +98,7 @@ html {
 }
 
 /* navbar-wrapper */
-.navbar-wrapeer {
+.navbar-wraper {
   width: 100vw;
   height: 100vh;
   background-color: var(--primary-color);
@@ -118,6 +118,17 @@ html {
   transition: bottom 0.5s, opacity 0.2s;
 }
 
+/* css 38. js 06 */
+.change .navbar-wraper{
+  bottom: 0%;
+  opacity: 1;
+
+  /* css 40 */
+  transition: bottom 0.5s, opacity 0.2s 0.25s;
+}
+
+
+
 .navbar {
   widows: 100%;
   height: 100%;
@@ -134,7 +145,7 @@ html {
   position: absolute;
   top: 3rem;
   left: 3rem;
-  z-index: 300;
+  z-index: 900;
 }
 /* cs 32 */
 .close-navbar-icon .line {
@@ -471,6 +482,8 @@ html {
 .stories-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .story-bg {
   padding: 5rem;
@@ -652,6 +665,7 @@ html {
   justify-content: center;
   width: 100%;
 }
+
 .footer-link {
   font-size: 2rem;
   color: var(--white-color);
@@ -662,8 +676,14 @@ html {
 
   /* css 24 */
   transition: all 0.2s;
+  
 }
 
+.footer-link:hover{
+  
+  box-shadow: 0 2rem 3rem #000;
+  transform: rotate(-20deg);
+}
 .footer-paragraph {
   text-align: center;
   font-size: 1.5rem;
