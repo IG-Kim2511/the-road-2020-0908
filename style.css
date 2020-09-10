@@ -515,88 +515,78 @@ html {
 
 /* [contaxt] */
 
-.contact{
+.contact {
   padding: 15rem 0 20rem 0;
   text-align: center;
-  
+
   background: url(images/contact-us-bg.png) center no-repeat;
   background-size: cover;
 
   /* css 22 keyframes */
 
-animation: contact-bg 5s infinite;
-
-  
+  animation: contact-bg 5s infinite;
 }
 
 @keyframes contact-bg {
-  0%{
+  0% {
     background-color: cadetblue;
   }
-  25%{
+  25% {
     background-color: burlywood;
   }
-  50%{
+  50% {
     background-color: aqua;
   }
-  75%{
+  75% {
     background-color: yellowgreen;
   }
-  100%{
+  100% {
     background-color: darkorange;
   }
-
 }
 
-.contact-heading{
-font-size: 7rem;
-font-weight: 700;
-text-transform: uppercase;
-letter-spacing: 0.5rem;
-color: var(--white-color);
-text-shadow: 0 1rem 2rem #000;
-margin-bottom: 8rem;
-
+.contact-heading {
+  font-size: 7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--white-color);
+  text-shadow: 0 1rem 2rem #000;
+  margin-bottom: 8rem;
 }
-.contact-form{
+.contact-form {
   width: 70rem;
   height: 50rem;
-  background-color: rgba(255,255,255,0.95);
+  background-color: rgba(255, 255, 255, 0.95);
   margin: auto;
 
-  
- /* css 16 */
- flex-direction: column;
- border-radius: 0.5rem;
- box-shadow: 0 1rem 3rem #000;
- padding: 5rem;
- 
+  /* css 16 */
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 3rem #000;
+  padding: 5rem;
 }
-.input-group{
+.input-group {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
 
-/* css 18 */
+  /* css 18 */
   position: relative;
-
 }
-.input-groups{
+.input-groups {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  
-  
-  
 }
 
-.input-groups .input-group{
+.input-groups .input-group {
   width: 48.5%;
 }
 
 .input-group input,
-.input-group textarea{
+.input-group textarea {
   padding: 3rem 1rem 1rem 1rem;
   background-color: var(--secondary-color);
   border: 0.1rem solid var(--secondary-color);
@@ -606,14 +596,13 @@ margin-bottom: 8rem;
   border-radius: 0.5rem;
 
   transition: border 0.3s;
-  
 }
 
 .input-group input:focus,
-.input-group textarea:focus{
+.input-group textarea:focus {
   border: 0.1rem solid var(--primary-color);
 }
-.input-group label{
+.input-group label {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -624,10 +613,9 @@ margin-bottom: 8rem;
   position: absolute;
   top: 1rem;
   left: 1rem;
-  
 }
 
-.form-btn{
+.form-btn {
   width: 100%;
   padding: 1rem;
   font-size: 1.6rem;
@@ -641,19 +629,100 @@ margin-bottom: 8rem;
 
   /* css 20 */
   transition: all 0.3s ease-in;
-  
 }
 /* css 20 */
-.form-btn:hover{
+.form-btn:hover {
   background-color: var(--primary-color);
 }
 
-.input-group textarea{
-max-height: 15rem;
-max-width: 100%;
-min-width: 50rem;
-
+.input-group textarea {
+  max-height: 15rem;
+  max-width: 100%;
+  min-width: 50rem;
 }
 
 /* [footer] */
-/* background-color: var(--test-color); */
+.footer {
+  background-color: var(--grey-color);
+  padding: 4rem 0 2rem 0;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.footer-link {
+  font-size: 2rem;
+  color: var(--white-color);
+  margin: 0 2rem;
+  background-color: var(--grey-color);
+  padding: 0.3rem 3rem;
+  letter-spacing: 0.1rem;
+
+  /* css 24 */
+  transition: all 0.2s;
+}
+
+.footer-paragraph {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  letter-spacing: 0.1rem;
+
+  background-color: var(--grey-color);
+  margin-top: 5rem;
+  /* background-color: var(--test-color); */
+}
+
+/* media query */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .header-paragraph {
+    display: none;
+  }
+  .popular-tours-heading {
+    font-size: 5rem;
+  }
+
+  /* [cards] */
+  .popular-tours-heading{
+    display: flex;
+justify-content: center;  }
+  
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin: 1rem 0;
+  }
+
+  /* [storys] */
+  .story-bg {
+    width: 85%;
+    transform: skewX(0deg);
+  }
+ .story-image{
+   transform: skewX(20deg);
+ }
+ .story-text{
+  transform: skewX(20deg);
+
+ }
+
+
+  /* [contact] */
+  .contact-form {
+    width: 90%;
+  }
+  .footer-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-link {
+    margin: 1rem 0;
+  }
+}
