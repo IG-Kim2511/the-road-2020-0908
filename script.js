@@ -1,11 +1,19 @@
 // js 02 popular tours button
 
-// const navBtn = document.querySelectorAll(".navigation-button");
+// (1)
+// const naviBtn = document.querySelectorAll(".navigation-button");
 
-// Array.from(navBtn).forEach((item) => {
+// Array.from(naviBtn).forEach((item) => {
 //   item.onclick = () => {
 //     item.parentElement.parentElement.classList.toggle("change");
 //   };
+// });
+
+// (2)
+// const naviBtn = document.querySelectorAll(".navigation-button");
+
+// naviBtn.addEventListener("click", ()=>{
+//   this.parentElement.parentElement.classList.toggle(change);
 // });
 
 // js 04. put color on 'close navbar icon'
@@ -22,19 +30,10 @@ Array.from(navLink).forEach((item) => {
 
 // js 06 navbar icon click - navbar wrapper coming out
 
+const navBtn = document.querySelector(".navbar-button");
 
-// const navbarIcon = document.querySelector(".navbar-icon");
-// const container = document.querySelector(".container");
+const navList = document.querySelector(".nav-list");
 
-// navbarIcon.addEventListener("click", () => {
-//   container.classList.add("change");
-// });
-
-
-const navBtn = document.querySelector('.navbar-button');
-
-const navList = document.querySelector('.nav-list');
-
-navBtn.addEventListener('click',()=>{
-  navList.classList.toggle('navToggle');
+navBtn.addEventListener("click", () => {
+  navList.classList.toggle("navToggle");
 });

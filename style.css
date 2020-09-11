@@ -68,6 +68,14 @@ html {
 }
 
 /* [navbar2] */
+.navbar2-wrapper{
+/* width: 100vw;
+height: 100vh; */
+/* position: fixed; */
+/* left: 0; */
+
+
+}
 .navbar2{
   position: fixed;
   top: 0;
