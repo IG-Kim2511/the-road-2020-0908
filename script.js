@@ -1,12 +1,12 @@
 // js 02 popular tours button
 
-const navBtn = document.querySelectorAll(".navigation-button");
+// const navBtn = document.querySelectorAll(".navigation-button");
 
-Array.from(navBtn).forEach((item) => {
-  item.onclick = () => {
-    item.parentElement.parentElement.classList.toggle("change");
-  };
-});
+// Array.from(navBtn).forEach((item) => {
+//   item.onclick = () => {
+//     item.parentElement.parentElement.classList.toggle("change");
+//   };
+// });
 
 // js 04. put color on 'close navbar icon'
 
@@ -22,16 +22,19 @@ Array.from(navLink).forEach((item) => {
 
 // js 06 navbar icon click - navbar wrapper coming out
 
-// const openNavbar = document.querySelector('.open-navbar-icon');
-// const closeNavbar = document.querySelector('.close-navbar-icon');
 
-const navbarIcon = document.querySelector(".navbar-icon");
-const container = document.querySelector(".container");
+// const navbarIcon = document.querySelector(".navbar-icon");
+// const container = document.querySelector(".container");
 
-navbarIcon.addEventListener("click", () => {
-  container.classList.add("change");
-});
-
-// closeNavbar.addEventListener('click',()=>{
-// container.classList.add('change');
+// navbarIcon.addEventListener("click", () => {
+//   container.classList.add("change");
 // });
+
+
+const navBtn = document.querySelector('.navbar-button');
+
+const navList = document.querySelector('.nav-list');
+
+navBtn.addEventListener('click',()=>{
+  navList.classList.toggle('navToggle');
+});
